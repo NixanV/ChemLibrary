@@ -6,19 +6,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.element {
+a, .empty-div {
     display: flex;
     flex-direction: column;
     font-weight: bold;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     /* flex: 2vw 0 0; */
     color: black;
     box-sizing: border-box;
     border-radius: 3px;
-    margin: 3px;
+    margin: 2px;
     height: 88px;
-    width: 80px;
+    width: 82px;
     text-decoration: none;
 }
 
@@ -26,21 +26,21 @@ p {
     margin: 0px;
 }
 
-.element>p:nth-child(3){
+a>p:nth-child(3){
     font-size: 13px;
     font-weight: normal;
 }
 
-.element>p:nth-child(4){
+a>p:nth-child(4){
     font-size: 10px;
     font-weight: normal;
 }
 
-.element>p:nth-child(2){
+a>p:nth-child(2){
     font-size: 22px;
 }
 
-.element>p:nth-child(1){
+a>p:nth-child(1){
     font-size: 18px;
     font-weight: normal;
 }
@@ -77,6 +77,6 @@ p {
     background-color: #9ec87c;
 }
 
-.element-Noblegas{
+.Noblegas{
     background-color: #f5b2ca;
 }
