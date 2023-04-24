@@ -1,0 +1,82 @@
+.row {
+    display: flex;
+    text-align: center;
+    height: 92px;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    align-items: center;
+    /* justify-content: center; */
+    /* flex: 2vw 0 0; */
+    color: black;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 3px;
+    height: 88px;
+    width: 80px;
+    text-decoration: none;
+}
+
+p {
+    margin: 0px;
+}
+
+.element>p:nth-child(3){
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.element>p:nth-child(4){
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.element>p:nth-child(2){
+    font-size: 22px;
+}
+
+.element>p:nth-child(1){
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.AlkaliMetal{
+    background-color: #b2232f;
+}
+
+.AlkalineEarthMetal{
+    background-color: #e1a431;
+}
+
+.free-space{
+    margin-bottom: 30px;
+}
+
+.TransitionMetal{
+    background-color: #9abee2;
+}
+
+.PostTransitionMetal{
+    background-color: #5ac65a;
+}
+
+.Metalloid{
+    background-color: #afbc89;
+}
+
+.Nonmetal{
+    background-color: #dada68;
+}
+
+.Halogen {
+    background-color: #9ec87c;
+}
+
+.element-Noblegas{
+    background-color: #f5b2ca;
+}

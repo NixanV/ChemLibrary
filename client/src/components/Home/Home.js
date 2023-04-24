@@ -1,7 +1,7 @@
 import style from './home.module.css'
 
 export const Home = () => {
-    retur (
+    return (
         <section className={style["all-elements"]}>
         <div className={style["row"]}>
           <a className={style["element Nonmetal Hydrogen"]} href="">
@@ -26,7 +26,7 @@ export const Home = () => {
           <div className={style["element empty-div"]} />
           <div className={style["element empty-div"]} />
           <div className={style["element empty-div"]} />
-          <a className={style["element Noblegas Helluim"]} href="">
+          <a className={style["element-Noblegas-Helluim"]} href="">
             <p>2</p>
             <p>He</p>
             <p>Hellium</p>
@@ -56,7 +56,7 @@ export const Home = () => {
           <div className={style["element empty-div"]} />
           <div className={style["element empty-div"]} />
           <div className={style["element empty-div"]} />
-          <a className={style["element Metalloid Boron"]} href="">
+          <a className={style["element_Metalloid_Boron"]} href="">
             <p>5</p>
             <p>B</p>
             <p>Boron</p>
@@ -86,7 +86,7 @@ export const Home = () => {
             <p>Fluorine</p>
             <p>Halogen</p>
           </a>
-          <a className={style["element Noblegas Neon"]} href="">
+          <a className={style["element-Noblegas-Neon"]} href="">
             <p>10</p>
             <p>Ne</p>
             <p>Neon</p>
@@ -146,7 +146,7 @@ export const Home = () => {
             <p>Chlorine</p>
             <p>Halogen</p>
           </a>
-          <a className={style["element Noblegas Argon"]} href="">
+          <a className={style["element-Noblegas-Argon"]} href="">
             <p>18</p>
             <p>Ar</p>
             <p>Argon</p>
@@ -256,7 +256,7 @@ export const Home = () => {
             <p>Bromine</p>
             <p>Halogen</p>
           </a>
-          <a className={style["element Noblegas Krypton"]} href="">
+          <a className={style["element-Noblegas-Krypton"]} href="">
             <p>36</p>
             <p>Kr</p>
             <p>Krypton</p>
@@ -366,7 +366,7 @@ export const Home = () => {
             <p>Iodine</p>
             <p>Halogen</p>
           </a>
-          <a className={style["element Noblegas Xenon"]} href="">
+          <a className={style["element-Noblegas-Xenon"]} href="">
             <p>54</p>
             <p>Xn</p>
             <p>Xenon</p>
@@ -476,7 +476,7 @@ export const Home = () => {
             <p>Astatine</p>
             <p>Halogen</p>
           </a>
-          <a className={style["element Noblegas Radon"]} href="">
+          <a className={style["element-Noblegas-Radon"]} href="">
             <p>86</p>
             <p>Rn</p>
             <p>Radon</p>
@@ -586,7 +586,7 @@ export const Home = () => {
             <p>Tennessine</p>
             <p>Halogen</p>
           </a>
-          <a className={style["element Noblegas oganesson"]} href="">
+          <a className={style["element-Noblegas-oganesson"]} href="">
             <p>118</p>
             <p>Og</p>
             <p>oganesson</p>
