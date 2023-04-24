@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-around;
     background-color: #5cdb94;
+    margin-bottom: 70px;
 }
 
 .heading{
@@ -22,9 +23,10 @@
     font-size: 22px;
 }
 
-.navigation ul li a{
+.links{
     text-decoration: none;
     color: white;
+    height: 30px;
 }
 
 .nav-list li:hover{

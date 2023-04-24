@@ -9,19 +9,19 @@ export const Header = () => {
             <div className={style["navigation"]}>
                 <ul className={style["nav-list"]}>
                     <li>
-                    <a href="">Home</a>
+                    <a className={style["links"]} href="">Home</a>
                     </li>
                     <li>
-                    <a href="">Profile</a>
+                    <a className={style["links"]} href="">Profile</a>
                     </li>
                     <li>
-                    <a href="">Login</a>
+                    <a className={style["links"]} href="">Login</a>
                     </li>
                     <li>
-                    <a href="">Logout</a>
+                    <a className={style["links"]} href="">Logout</a>
                     </li>
                     <li>
-                    <a href="">Register</a>
+                    <a className={style["links"]} href="">Register</a>
                     </li>
                 </ul>
             </div>
