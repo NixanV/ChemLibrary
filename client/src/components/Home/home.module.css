@@ -80,3 +80,7 @@ a>p:nth-child(1){
 .Noblegas{
     background-color: #f5b2ca;
 }
+
+.Nonmetal-Checked{
+    background-color: red;
+}
