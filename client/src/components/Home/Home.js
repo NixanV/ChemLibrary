@@ -2,28 +2,28 @@ import style from './home.module.css'
 import { useState } from 'react';
 
 export const Home = () => {
+    const [active, setActive] = useState(false);
     const [typeOf, setTypeOf] = useState("");
 
-
+    
+    const onClickChangePosition = (e) => {
+        e.preventDefault();
+        setTypeOf(e.target.className);
+        console.log(typeOf);
+    }
+    
+    
     return (
         <>
 
-            <div className={style['radioButtons']}>
-                <input
-                type="radio"
-                id="Nonmetal"
-                value="Nonmetal-Checked"
-                checked={typeOf==="Nonmetal-Checked"}
-                onChange={e=>setTypeOf(e.target.value)}
-                />     
-                <label htmlFor="Nonmetal">Nonmetal</label>  
-
-            </div>
+            {/* nqma da ima radio button samo kato se natisne a taga da se toggle-va i da se smenq poziciqta crez animaciq */}
 
 
             <section className={style["all-elements"]}>
                 <div className={style["row"]}>
-                    <a className={typeOf==="Nonmetal-Checked" ? style["Nonmetal-Checked"] : style["Nonmetal"]} href="">
+                    <a 
+                    className={style["Nonmetal"]}
+                    href="">
                         <p>1</p>
                         <p>H</p>
                         <p>Hydrogen</p>
@@ -45,7 +45,9 @@ export const Home = () => {
                     <div className={style["empty-div"]} />
                     <div className={style["empty-div"]} />
                     <div className={style["empty-div"]} />
-                    <a className={style["Noblegas"]} href="">
+                    <a 
+                        className={style["Noblegas"]}
+                     href="">
                         <p>2</p>
                         <p>He</p>
                         <p>Hellium</p>
@@ -266,7 +268,7 @@ export const Home = () => {
                         <p>Arsenic</p>
                         <p>Metalloid</p>
                     </a>
-                    <a className={style["Nonmetal"]} href="">
+                    <a className={typeOf==="Nonmetal-Checked" ? style["Nonmetal-Checked"] : style["Nonmetal"]} href="">
                         <p>34</p>
                         <p>Se</p>
                         <p>Selenium</p>

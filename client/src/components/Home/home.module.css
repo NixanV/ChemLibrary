@@ -6,6 +6,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.all-elements{
+    padding: 30px;
+}
+
 a, .empty-div {
     display: flex;
     flex-direction: column;
@@ -46,7 +50,7 @@ a>p:nth-child(1){
 }
 
 .AlkaliMetal{
-    background-color: #b2232f;
+    background-color: #c62835;
 }
 
 .AlkalineEarthMetal{
@@ -81,6 +85,58 @@ a>p:nth-child(1){
     background-color: #f5b2ca;
 }
 
-.Nonmetal-Checked{
-    background-color: red;
+.Nonmetal:hover{
+    transform: scale(1.05);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.TransitionMetal:hover{
+    transform: scale(1.05);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.PostTransitionMetal:hover{
+    transform: scale(1.05);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.Metalloid:hover{
+    transform: scale(1.05);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    cursor: pointer;    
+}
+
+.Halogen:hover{
+    transform: scale(1.05);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    cursor: pointer;    
+}
+
+.Noblegas:hover{
+    transform: scale(1.05);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    cursor: pointer;    
+}
+
+.AlkalineEarthMetal:hover{
+    transform: scale(1.05);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    cursor: pointer;   
+}
+
+.AlkaliMetal:hover{
+    transform: scale(1.5);
+    transition-property: transform;
+    transition-duration: 0.6s;
+    cursor: pointer;    
 }
