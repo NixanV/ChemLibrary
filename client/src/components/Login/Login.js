@@ -1,13 +1,18 @@
 import style from "./login.module.css"
 
 export const Login = () => {
+
+    const onSubmitHandler = () => {
+        
+    }
+
     return(
         <section className={style["wrapper"]}>
             <div className={style["sign-in-table"]}>
                 <h2>Sign in</h2>
             </div>
             <div className={style["form-wrapper"]}>
-                <form>
+                <form onSubmit={onSubmitHandler}>
                     <div className={style["email-div"]}>
                         
                         <input
