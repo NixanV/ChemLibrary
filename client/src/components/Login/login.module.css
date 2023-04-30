@@ -1,0 +1,65 @@
+.wrapper{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 350px;
+    height: 250px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-table{
+    display: flex;
+    justify-content: center;
+    background-color: #85dd62;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+}
+
+
+.email-input{
+    width: 310px;
+    height: 22px;
+    border: 0;
+    border-bottom: 1px solid black;
+    
+    outline: none;
+
+}
+
+.email-input::-moz-placeholder { /* Firefox 19+ */
+    color: black;
+    padding-left: 20px;
+    opacity: 0.8;
+}
+
+.email-label{
+    font-size: 18px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: gray;
+}
+
+.email-div{
+    margin: 0 20px;
+    width: 310px;
+    position: relative;
+    padding: 15px 0 0 0;
+}
+
+.email-input:focus ~ .email-label{
+    position: absolute;
+    top: 0;
+    transition: 0.2s;
+    font-size: 12px;
+    font-weight: 700;
+    color:#85dd62;
+}
+
+.email-input:focus{
+    border-bottom: 1px solid #85dd62;
+}

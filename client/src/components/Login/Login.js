@@ -3,19 +3,21 @@ import style from "./login.module.css"
 export const Login = () => {
     return(
         <section className={style["wrapper"]}>
+            <div className={style["sign-in-table"]}>
+                <h2>Sign in</h2>
+            </div>
             <div className={style["form-wrapper"]}>
                 <form>
-                <div className={style["email-div"]}>
+                    <div className={style["email-div"]}>
+                        
                         <input
                             type="email"
                             id={style["login-email"]}
                             className={style["email-input"]}
                             name="email"
-                            placeholder="Enter email"
                             required
                             />
-
-                        <label className={style["form-label"]} htmlFor="email">Email address</label>
+                        <label htmlFor="email" className={style["email-label"]}>Email</label>
                     </div>
 
                 
@@ -23,12 +25,11 @@ export const Login = () => {
                         <input
                             type="password"
                             id={style["login-password"]}
-                            placeholder="Enter password"
+                            placeholder="Password"
                             name="password"
                             required
                             />
 
-                        <label className={style["form-label"]} htmlFor="password">Password</label>
                     </div>
 
                     <div className="button-div">
