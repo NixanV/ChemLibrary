@@ -1,16 +1,16 @@
-.wrapper{
+.wrapper {
     background-color: white;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     width: 350px;
-    height: 250px;
+    height: 300px;
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
 }
 
-.sign-in-table{
+.sign-in-table {
     display: flex;
     justify-content: center;
     background-color: #85dd62;
@@ -20,23 +20,23 @@
 }
 
 
-.email-input{
+.email-input {
     width: 310px;
     height: 22px;
     border: 0;
     border-bottom: 1px solid black;
-    
+
     outline: none;
 
 }
 
 /* .email-input::-moz-placeholder { /* Firefox 19+ */
-    /* color: black;
+/* color: black;
     padding-left: 20px;
     opacity: 0.8;
 }  */
 
-.email-label{
+.email-label {
     font-size: 18px;
     position: absolute;
     bottom: 0px;
@@ -44,46 +44,46 @@
     color: gray;
 }
 
-.email-div{
+.email-div {
     margin: 0 20px;
     width: 310px;
     position: relative;
     padding: 15px 0 0 0;
 }
 
-.email-input:focus ~ .email-label{
+.email-input:focus~.email-label {
     position: absolute;
     top: 0;
     transition: 0.2s;
     font-size: 12px;
     font-weight: 700;
-    color:#85dd62;
+    color: #85dd62;
 }
 
-.email-input:focus{
+.email-input:focus {
     border-bottom: 1px solid #85dd62;
 }
 
 
 
 
-.password-input{
+.password-input {
     width: 310px;
     height: 22px;
     border: 0;
     border-bottom: 1px solid black;
-    
+
     outline: none;
 
 }
 
 /* .email-input::-moz-placeholder { /* Firefox 19+ */
-    /* color: black;
+/* color: black;
     padding-left: 20px;
     opacity: 0.8;
 }  */
 
-.password-label{
+.password-label {
     font-size: 18px;
     position: absolute;
     bottom: 0px;
@@ -91,22 +91,78 @@
     color: gray;
 }
 
-.password-div{
+.password-div {
     margin: 0 20px;
     width: 310px;
     position: relative;
     padding: 15px 0 0 0;
 }
 
-.password-input:focus ~ .password-label{
+.password-input:focus~.password-label {
     position: absolute;
     top: 0;
     transition: 0.2s;
     font-size: 12px;
     font-weight: 700;
-    color:#85dd62;
+    color: #85dd62;
 }
 
-.password-input:focus{
+.password-input:focus {
     border-bottom: 1px solid #85dd62;
+}
+
+
+/* CSS */
+.login-button {
+    appearance: none;
+    background-color: #85dd62;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 90px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.login-button:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.login-button:hover {
+    background-color: #2c974b;
+}
+
+.login-button:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+}
+
+.login-button:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.login-button:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
