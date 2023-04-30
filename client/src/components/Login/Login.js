@@ -25,10 +25,11 @@ export const Login = () => {
                         <input
                             type="password"
                             id={style["login-password"]}
-                            placeholder="Password"
+                            className={style["password-input"]}
                             name="password"
                             required
                             />
+                        <label htmlFor="password" className={style["password-label"]}>Password</label>
 
                     </div>
 

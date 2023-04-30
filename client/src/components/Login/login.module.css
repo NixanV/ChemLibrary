@@ -30,11 +30,11 @@
 
 }
 
-.email-input::-moz-placeholder { /* Firefox 19+ */
-    color: black;
+/* .email-input::-moz-placeholder { /* Firefox 19+ */
+    /* color: black;
     padding-left: 20px;
     opacity: 0.8;
-}
+}  */
 
 .email-label{
     font-size: 18px;
@@ -61,5 +61,52 @@
 }
 
 .email-input:focus{
+    border-bottom: 1px solid #85dd62;
+}
+
+
+
+
+.password-input{
+    width: 310px;
+    height: 22px;
+    border: 0;
+    border-bottom: 1px solid black;
+    
+    outline: none;
+
+}
+
+/* .email-input::-moz-placeholder { /* Firefox 19+ */
+    /* color: black;
+    padding-left: 20px;
+    opacity: 0.8;
+}  */
+
+.password-label{
+    font-size: 18px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: gray;
+}
+
+.password-div{
+    margin: 0 20px;
+    width: 310px;
+    position: relative;
+    padding: 15px 0 0 0;
+}
+
+.password-input:focus ~ .password-label{
+    position: absolute;
+    top: 0;
+    transition: 0.2s;
+    font-size: 12px;
+    font-weight: 700;
+    color:#85dd62;
+}
+
+.password-input:focus{
     border-bottom: 1px solid #85dd62;
 }
