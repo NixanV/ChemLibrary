@@ -1,9 +1,51 @@
 import style from "./login.module.css"
+import {useState, useContext} from 'react'
+import {useNavigate} from 'react-router-dom'
+import * as service from '../../services/userService'
+import { AuthContext, AuthProvider } from "../../context/AuthContext"
 
 export const Login = () => {
+    const navigate = useNavigate();
 
-    const onSubmitHandler = () => {
-        
+    const {userLogin} = useContext(AuthContext)
+    const [data, setData] = useState({
+        email: '',
+        password: ''
+    })
+
+    const onChangeHandler = (e) => {
+        setData(state => ({
+            ...state,
+            [e.target.name]: [e.target.value]
+        }))
+    }
+
+    const onSubmitHandler = (ev, userInfo) => {
+        ev.preventDefault();
+
+        if(userInfo.email === "" || userInfo.password === ""){
+            alert("Should fill inputs!")
+        }
+        else{
+            const pattern = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$");
+            try{
+                if(pattern.test(userInfo.email)){
+                    service.login(userInfo)
+                        .then(res => {
+                            if(!res.message){
+                                userLogin(res);
+                                navigate('/');
+                            }else{
+                                alert("Invalid email or password");
+                            }
+                        })
+                } 
+            }
+            catch{
+                alert('error message')
+            }
+            
+        }
     }
 
     return(
@@ -12,7 +54,7 @@ export const Login = () => {
                 <h2>Sign in</h2>
             </div>
             <div className={style["form-wrapper"]}>
-                <form onSubmit={onSubmitHandler}>
+                <form onSubmit={(ev) => onSubmitHandler(ev, data)}>
                     <div className={style["email-div"]}>
                         
                         <input
@@ -20,6 +62,8 @@ export const Login = () => {
                             id={style["login-email"]}
                             className={style["email-input"]}
                             name="email"
+                            value={data.email}
+                            onChange={(e) => onChangeHandler(e)}
                             required
                             />
                         <label htmlFor="email" className={style["email-label"]}>Email</label>
@@ -32,6 +76,8 @@ export const Login = () => {
                             id={style["login-password"]}
                             className={style["password-input"]}
                             name="password"
+                            value={data.password}
+                            onChange={(e) => onChangeHandler(e)}
                             required
                             />
                         <label htmlFor="password" className={style["password-label"]}>Password</label>
