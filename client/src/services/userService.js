@@ -20,3 +20,14 @@ export const logout = (accessToken) => {
         }
     })
 }
+
+export const register = (userData) => {
+    return fetch(`${baseUrl}/register`, {
+        method: "POST",
+        headers:{
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(userData)
+    })
+    .then(res => res.json())
+}
