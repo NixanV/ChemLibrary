@@ -1,3 +1,12 @@
+body{
+    background-color: #086972;
+}
+
+html, body {
+    padding:0;
+    margin:0;
+}
+
 .row {
     display: flex;
     text-align: center;

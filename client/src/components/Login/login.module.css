@@ -8,6 +8,9 @@
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 200px;
+    left: 570px;
 }
 
 .sign-in-table {
@@ -21,7 +24,8 @@
 
 
 .email-input {
-    width: 310px;
+    margin-left: 110px;
+    width: 200px;
     height: 22px;
     border: 0;
     border-bottom: 1px solid black;
@@ -51,14 +55,15 @@
     padding: 15px 0 0 0;
 }
 
-.email-input:focus~.email-label {
-    position: absolute;
-    top: 0;
+.email-input:focus~.email-label{ 
+
     transition: 0.2s;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 700;
     color: #85dd62;
 }
+
+
 
 .email-input:focus {
     border-bottom: 1px solid #85dd62;
@@ -68,7 +73,8 @@
 
 
 .password-input {
-    width: 310px;
+    margin-left: 110px;
+    width: 200px;
     height: 22px;
     border: 0;
     border-bottom: 1px solid black;
@@ -99,10 +105,8 @@
 }
 
 .password-input:focus~.password-label {
-    position: absolute;
-    top: 0;
     transition: 0.2s;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 700;
     color: #85dd62;
 }
