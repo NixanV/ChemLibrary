@@ -2,7 +2,7 @@ import style from "./login.module.css"
 import {useState, useContext} from 'react'
 import {useNavigate} from 'react-router-dom'
 import * as service from '../../services/userService'
-import { AuthContext, AuthProvider } from "../../context/AuthContext"
+import { AuthContext } from "../../context/AuthContext"
 
 export const Login = () => {
     const navigate = useNavigate();
@@ -16,12 +16,14 @@ export const Login = () => {
     const onChangeHandler = (e) => {
         setData(state => ({
             ...state,
-            [e.target.name]: [e.target.value]
+            [e.target.name]: e.target.value
         }))
     }
 
     const onSubmitHandler = (ev, userInfo) => {
         ev.preventDefault();
+        console.log(userInfo.password);
+
 
         if(userInfo.email === "" || userInfo.password === ""){
             alert("Should fill inputs!")
@@ -34,6 +36,7 @@ export const Login = () => {
                         .then(res => {
                             if(!res.message){
                                 userLogin(res);
+                                console.log(res);
                                 navigate('/');
                             }else{
                                 alert("Invalid email or password");

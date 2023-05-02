@@ -5,7 +5,7 @@ export const login = (userData) => {
     return fetch(`${baseUrl}/login`, {
         method: 'POST',
         headers:{
-            'content-type': 'application/json'
+            'Content-type': 'application/json'
         },
         body: JSON.stringify(userData)
     })
