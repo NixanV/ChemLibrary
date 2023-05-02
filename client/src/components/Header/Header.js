@@ -22,7 +22,7 @@ export const Header = () => {
                                 <a className={style["links"]} href="">Profile</a>
                             </li>
                             <li>
-                                <a className={style["links"]} href="">Logout</a>
+                                <Link className={style["links"]} to="/logout">Logout</Link>
                             </li>
                         </>
 
