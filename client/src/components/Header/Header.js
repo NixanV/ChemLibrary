@@ -19,7 +19,7 @@ export const Header = () => {
                     {user?.accessToken ? (
                         <>
                             <li>
-                                <a className={style["links"]} href="">Profile</a>
+                                <Link className={style["links"]} to="/profile">Profile</Link>
                             </li>
                             <li>
                                 <Link className={style["links"]} to="/logout">Logout</Link>
@@ -33,7 +33,7 @@ export const Header = () => {
                             </li>
 
                             <li>
-                                <a className={style["links"]} href="">Register</a>
+                                <Link className={style["links"]} to="/register">Register</Link>
                             </li>
                         </>
 
