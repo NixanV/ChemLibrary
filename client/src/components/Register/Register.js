@@ -1,6 +1,43 @@
+import { useState } from "react"
 import styles from "./register.module.css"
+import { useNavigate, Link } from "react-router-dom"
 
 export const Register = () => {
+    const navigate = useNavigate();
+
+    const [data,  setData] = useState({
+        first_name: '',
+        last_name: '',
+        email: '',
+        password: '',
+        conf_password: ''
+    })
+
+    const [error, setError] = useState({
+        fisrtName_error: true,
+        lastName_error: true,
+        email_error: true,
+        password_error: true,
+        confPassword_error: true
+    })
+
+    const changeHandler = (e) => {
+        setData(state => ({
+            ...state,
+            [e.target.name]: e.target.value
+        }))
+    }
+
+    const submitHandler = (e, userData) => {
+        e.preventDefault();
+
+
+        
+
+    }
+
+
+
     return (
         <div className={styles["whole"]}>
         <div className={styles["form-wrapper"]}>
