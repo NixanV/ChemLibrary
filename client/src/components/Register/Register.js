@@ -14,11 +14,11 @@ export const Register = () => {
     })
 
     const [error, setError] = useState({
-        fisrtName_error: true,
-        lastName_error: true,
-        email_error: true,
-        password_error: true,
-        confPassword_error: true
+        fisrtName_error: false,
+        lastName_error: false,
+        email_error: false,
+        password_error: false,
+        confPassword_error: false
     })
 
     const changeHandler = (e) => {
@@ -30,9 +30,19 @@ export const Register = () => {
 
     const submitHandler = (e, userData) => {
         e.preventDefault();
-
-
         
+        // if(userData.first_name){
+        //     fisrtName_error = false;
+        // }
+        // if(userData.last_name){
+        //     lastName_error = false;
+        // }
+
+        // if(userData.password.length >= 8 && /\d/.test(userData.password) && /[!@#$%^&*]/.test(userData.password)){
+        //     password_error = false;
+        // }
+        
+
 
     }
 
@@ -40,6 +50,9 @@ export const Register = () => {
 
     return (
         <div className={styles["whole"]}>
+            <div className={styles["register-plate"]}>
+                Register Form
+            </div>
         <div className={styles["form-wrapper"]}>
             <form onSubmit={(e) => submitHandler(e, data)} method="POST">
                 <div className={styles["firstName-div"]}>
@@ -53,6 +66,9 @@ export const Register = () => {
                     required
                     value={data.first_name}
                     onChange={(e) => changeHandler(e)} />
+                    {error.fisrtName_error && 
+                        <p className={styles["first-name-err"]}>Invalid first name!</p>
+                    }
                 </div>
                 <div className={styles["lastName-div"]}>
                     <label htmlFor="last_name" className={styles["last-name-lbl"]}>
