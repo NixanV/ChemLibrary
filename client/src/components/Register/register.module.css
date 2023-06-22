@@ -1,4 +1,4 @@
-.form-wrapper{
+/* .form-wrapper{
     background-color: white;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -11,7 +11,7 @@
     position: absolute;
     top: 200px;
     left: 570px;
-}
+} */
 
 .register-plate{
     display: flex;
@@ -20,6 +20,8 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     color: white;
+    height: 60px;
+    align-items: center;
 }   
 
 .register-button{
@@ -74,4 +76,32 @@
 .register-button:active {
     background-color: #298e46;
     box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.whole{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 400px;
+    height: 500px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+    left: 570px;
+}
+
+.first-name-lbl{
+    font-size: 18px;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: gray;
+}
+
+.firstName-input{
+
+    margin-left: 120px;
 }
