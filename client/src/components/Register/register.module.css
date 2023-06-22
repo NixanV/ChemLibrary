@@ -35,7 +35,7 @@
     cursor: pointer;
     display: inline-block;
     font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 20px;
     padding: 6px 16px;
@@ -47,9 +47,10 @@
     touch-action: manipulation;
     vertical-align: middle;
     white-space: nowrap;
-    width: 90px;
+    width: 150px;
+    height: 45px;
     margin-left: 120px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .register-button:focus:not(:focus-visible):not(.focus-visible) {
@@ -102,6 +103,156 @@
 }
 
 .firstName-input{
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-left: 90px;
+    width: 190px;
+}
 
-    margin-left: 120px;
+.firstName-input:focus~.first-name-lbl{ 
+    transition: 0.2s;
+    font-size: 18px;
+    font-weight: 700;
+    color: #85dd62;
+}
+
+.firstName-input:focus {
+    border-bottom: 1px solid #85dd62;
+}
+
+.firstName-div{
+    margin-top: 10px;
+}
+
+
+
+
+.last-name-lbl{
+    font-size: 18px;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: gray;
+}
+
+.lastName-input{
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-left: 90px;
+    width: 190px;
+}
+
+.lastName-input:focus~.last-name-lbl{ 
+    transition: 0.2s;
+    font-size: 18px;
+    font-weight: 700;
+    color: #85dd62;
+}
+
+.lastName-input:focus {
+    border-bottom: 1px solid #85dd62;
+}
+
+.lastName-div{
+    margin-top: 10px;
+}
+
+
+
+.email-lbl{
+    font-size: 18px;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: gray;
+}
+
+.email-input{
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-left: 132px;
+    width: 190px;
+}
+
+.email-input:focus~.email-lbl{ 
+    transition: 0.2s;
+    font-size: 18px;
+    font-weight: 700;
+    color: #85dd62;
+}
+
+.email-input:focus {
+    border-bottom: 1px solid #85dd62;
+}
+
+.email-div{
+    margin-top: 10px;
+}
+
+
+.password-lbl{
+    font-size: 18px;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: gray;
+}
+
+.password-input{
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-left: 99px;
+    width: 190px;
+}
+
+.password-input:focus~.password-lbl{ 
+    transition: 0.2s;
+    font-size: 18px;
+    font-weight: 700;
+    color: #85dd62;
+}
+
+.password-input:focus {
+    border-bottom: 1px solid #85dd62;
+}
+
+.password-div{
+    margin-top: 10px;
+}
+
+
+
+.conf-password-lbl{
+    font-size: 18px;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: gray;
+}
+
+.confPassword-input{
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-left: 30px;
+    width: 190px;
+}
+
+.password-input:focus~.password-lbl{ 
+    transition: 0.2s;
+    font-size: 18px;
+    font-weight: 700;
+    color: #85dd62;
+}
+
+.confPassword-input:focus {
+    border-bottom: 1px solid #85dd62;
+}
+
+.conf-password-div{
+    margin-top: 10px;
 }
