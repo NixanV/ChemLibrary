@@ -126,7 +126,7 @@ export const Register = () => {
                     </div>
                     <button className={styles["register-button"]}>Register</button>
                     <p className={styles["have-account"]}>
-                        Do you have account? <Link to="/login">Login</Link>
+                        Do you have account? <Link to="/login" className={styles["login-btn"]}>Login</Link>
                     </p>
                 </form>
             </div>
