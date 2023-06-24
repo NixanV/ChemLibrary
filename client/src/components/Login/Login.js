@@ -1,6 +1,6 @@
 import style from "./login.module.css"
 import {useState, useContext} from 'react'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate, Link} from 'react-router-dom'
 import * as service from '../../services/userService'
 import { AuthContext } from "../../context/AuthContext"
 
@@ -89,7 +89,9 @@ export const Login = () => {
 
                     <div className="button-div">
                         <input type="submit" className={style["login-button"]} value="Login"/>
-                        <p className="dont-have-account">Don't have an account?</p>
+                        <p className={style["dont-have-acc"]}>Don't have an account?
+                        <Link to="/register" className={style["register-btn"]}>Register</Link>
+                        </p>
                     </div>
 
                 </form>
