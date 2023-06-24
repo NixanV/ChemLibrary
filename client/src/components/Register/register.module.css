@@ -289,3 +289,7 @@
 .have-account{
     margin-top: 40px;
 }
+
+.login-btn:hover {
+    background-color: #2c974b;
+}
